@@ -11,13 +11,13 @@
 </tr>
 <tr>
 <td>Node Version</td>
-<td>>= 0.4</td>
+<td>>= 0.6</td>
 </tr>
 </table>
 
 ## Usage
 
-```java-script
+```
 var minifyCSS = require('gulp-minify-css');
 
 gulp.task('minify-css', function() {
