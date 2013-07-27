@@ -1,0 +1,17 @@
+{
+  "name": "gulp-minify-css",
+  "description": "A Gulp plugin to minify css with the node package clean-css",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "dependencies": {
+    "clean-css": "~1.0.12"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
