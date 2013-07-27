@@ -4,7 +4,7 @@ var es = require('event-stream'),
 
 module.exports = function(opt){
   if (!opt) opt = {};
-  
+
   function modifyContents(file, cb){
     var newFile = clone(file);
 

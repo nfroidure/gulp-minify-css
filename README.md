@@ -1,12 +1,13 @@
+[![Build Status](https://travis-ci.org/jonathanepollack/gulp-minify-css.png?branch=master)](https://travis-ci.org/jonathanepollack/gulp-minify-css)
 ## Information
 
 <table>
 <tr> 
-<td>Package</td><td>Gulp-minify-css</td>
+<td>Package</td><td>gulp-minify-css</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Minify css with <a href="https://github.com/GoalSmashers/clean-css">clean-css</a></td>
+<td>Minify css with <a href="https://github.com/GoalSmashers/clean-css">clean-css.</a></td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -20,11 +21,20 @@
 var minifyCSS = require('gulp-minify-css');
 
 gulp.task('minify-css', function() {
+
   gulp.files('./static/css/*.css')
     .pipe(minifyCSS(opts))
     .pipe(gulp.folder('./dist/'))
 });
 ```
+### Options
+* `keepSpecialComments` - `*` for keeping all (default), `1` for keeping first one, `0` for removing all
+* `keepBreaks` - whether to keep line breaks (default is false)
+* `removeEmpty` - whether to remove empty elements (default is false)
+* `debug` - turns on debug mode measuring time spent on cleaning up
+  (run `npm run bench` to see example)
+* `root` - path with which to resolve absolute `@import` rules
+* `relativeTo` - path with which to resolve relative `@import` rules
 
 ## LICENSE
 
