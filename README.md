@@ -11,7 +11,7 @@
 </tr>
 <tr>
 <td>Node Version</td>
-<td>>= 0.6</td>
+<td>>= 0.8</td>
 </tr>
 </table>
 
@@ -22,9 +22,9 @@ var minifyCSS = require('gulp-minify-css');
 
 gulp.task('minify-css', function() {
 
-  gulp.files('./static/css/*.css')
+  gulp.src('./static/css/*.css')
     .pipe(minifyCSS(opts))
-    .pipe(gulp.folder('./dist/'))
+    .pipe(gulp.dest('./dist/'))
 });
 ```
 ### Options
