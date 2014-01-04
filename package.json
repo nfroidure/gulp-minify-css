@@ -4,25 +4,27 @@
   "version": "0.1.0",
   "repository": "https://github.com/jonathanepollack/gulp-minify-css.git",
   "homepage": "https://github.com/jonathanepollack/gulp-minify-css",
-   "keywords": [
-      "gulpplugin"
-   ],
+  "keywords": [
+    "gulpplugin"
+  ],
   "main": "./index.js",
   "dependencies": {
-      "event-stream": "~3.0.16",
-      "clean-css": "~1.0.12",
-      "clone": "~0.1.9"
+    "event-stream": "~3.0.16",
+    "clean-css": "~1.0.12",
+    "clone": "~0.1.9",
+    "bufferstreams": "0.0.1",
+    "gulp-util": "~2.2.5"
   },
   "engines": {
-      "node": ">= 0.8"
-  },  
+    "node": ">= 0.10"
+  },
   "scripts": {
     "test": "mocha"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
     "chai": "~1.7.2",
-    "gulp": "~0.1.0"
+    "gulp": "~3.2.0"
   },
   "licenses": [
     {
