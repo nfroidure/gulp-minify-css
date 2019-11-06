@@ -10,7 +10,7 @@
   "main": "./index.js",
   "dependencies": {
     "event-stream": "~3.0.16",
-    "clean-css": "~1.0.12",
+    "clean-css": "~4.2.1",
     "clone": "~0.1.9",
     "bufferstreams": "0.0.1",
     "gulp-util": "~2.2.5"
